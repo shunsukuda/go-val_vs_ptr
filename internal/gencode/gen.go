@@ -30,6 +30,7 @@ type tmplSet struct {
 func main() {
 	set := []tmplSet{
 		{Name: "Bench", Input: "tmpl_bench_test.go", Output: "gen_bench_test.go", Config: conf},
+		{Name: "Bench", Input: "tmpl_bench_global_test.go", Output: "gen_bench_global_test.go", Config: conf},
 	}
 
 	PROJECT_PATH := os.Getenv("GOPATH") + "/src/github.com/shunsukuda/go-val_vs_ptr/"

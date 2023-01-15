@@ -753,4 +753,3 @@ BenchmarkPointerReciverNoinline3Arg2ReturnPointer9Word-4    	505949751	         
 BenchmarkPointerReciverNoinline3Arg2ReturnPointer10Word-4   	533106132	         2.464 ns/op	       0 B/op	       0 allocs/op
 PASS
 ok  	github.com/shunsukuda/go-val_vs_ptr	33.161s
-

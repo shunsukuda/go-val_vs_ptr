@@ -1,0 +1,756 @@
+go test -bench FuncNoinlineGlobal1Arg0Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkFuncNoinlineGlobal1Arg0ReturnValue1Word-4      	510197902	         2.280 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnValue2Word-4      	545800552	         2.176 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnValue3Word-4      	553793515	         2.149 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnValue4Word-4      	491934940	         2.366 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnValue5Word-4      	459989818	         2.719 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnValue6Word-4      	411725493	         2.733 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnValue7Word-4      	436472703	         2.813 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnValue8Word-4      	407129770	         2.807 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnValue9Word-4      	366162391	         3.364 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnValue10Word-4     	275018283	         3.797 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnPointer1Word-4    	643904468	         1.910 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnPointer2Word-4    	642362196	         2.095 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnPointer3Word-4    	611120504	         1.898 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnPointer4Word-4    	640707370	         2.005 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnPointer5Word-4    	542801037	         2.194 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnPointer6Word-4    	525652532	         2.253 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnPointer7Word-4    	541407024	         2.065 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnPointer8Word-4    	620289037	         2.019 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnPointer9Word-4    	527754712	         2.486 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg0ReturnPointer10Word-4   	478726336	         2.400 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	32.001s
+
+go test -bench ValueReciverNoinlineGlobal1Arg0Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnValue1Word-4      	582929925	         1.998 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnValue2Word-4      	570020822	         2.124 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnValue3Word-4      	467922502	         2.587 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnValue4Word-4      	469451421	         2.682 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnValue5Word-4      	326691357	         3.452 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnValue6Word-4      	386923669	         3.212 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnValue7Word-4      	315105175	         3.945 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnValue8Word-4      	308147190	         4.302 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnValue9Word-4      	224355178	         5.529 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnValue10Word-4     	161915960	         6.706 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnPointer1Word-4    	635360455	         2.162 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnPointer2Word-4    	584302861	         2.103 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnPointer3Word-4    	531830934	         2.090 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnPointer4Word-4    	550177036	         2.210 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnPointer5Word-4    	483107725	         2.596 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnPointer6Word-4    	434462658	         2.554 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnPointer7Word-4    	417957398	         2.963 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnPointer8Word-4    	352075570	         3.411 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnPointer9Word-4    	268391988	         3.868 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg0ReturnPointer10Word-4   	214520214	         4.682 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	30.736s
+
+go test -bench PointerReciverNoinlineGlobal1Arg0Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnValue1Word-4      	566349544	         2.842 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnValue2Word-4      	530619278	         2.857 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnValue3Word-4      	530172130	         2.248 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnValue4Word-4      	488182102	         2.460 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnValue5Word-4      	512064488	         2.519 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnValue6Word-4      	461496145	         2.605 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnValue7Word-4      	409733680	         3.117 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnValue8Word-4      	390351657	         2.957 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnValue9Word-4      	348962173	         3.848 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnValue10Word-4     	237297787	         4.970 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnPointer1Word-4    	549867196	         2.222 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnPointer2Word-4    	503757199	         2.131 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnPointer3Word-4    	602656358	         2.032 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnPointer4Word-4    	596585505	         2.028 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnPointer5Word-4    	552873996	         2.317 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnPointer6Word-4    	540361993	         2.197 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnPointer7Word-4    	533799126	         1.973 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnPointer8Word-4    	586908036	         2.039 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnPointer9Word-4    	620262052	         1.899 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg0ReturnPointer10Word-4   	572507240	         1.958 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	32.683s
+
+go test -bench FuncNoinlineGlobal2Arg0Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkFuncNoinlineGlobal2Arg0ReturnValue1Word-4      	565076529	         1.966 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnValue2Word-4      	562856367	         2.325 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnValue3Word-4      	448760803	         2.809 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnValue4Word-4      	422987869	         2.635 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnValue5Word-4      	336894478	         3.461 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnValue6Word-4      	380793830	         3.226 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnValue7Word-4      	294925155	         4.119 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnValue8Word-4      	281108844	         4.252 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnValue9Word-4      	200680375	         6.146 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnValue10Word-4     	139529972	         9.407 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnPointer1Word-4    	501572161	         2.301 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnPointer2Word-4    	536142694	         2.142 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnPointer3Word-4    	582327750	         2.080 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnPointer4Word-4    	571265944	         2.044 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnPointer5Word-4    	597205933	         2.105 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnPointer6Word-4    	504746150	         2.437 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnPointer7Word-4    	594477932	         2.148 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnPointer8Word-4    	637985408	         1.897 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnPointer9Word-4    	616869150	         2.013 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg0ReturnPointer10Word-4   	604101006	         2.044 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	31.510s
+
+go test -bench ValueReciverNoinlineGlobal2Arg0Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnValue1Word-4      	584348810	         2.251 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnValue2Word-4      	439345081	         2.596 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnValue3Word-4      	356953363	         3.211 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnValue4Word-4      	317694116	         3.370 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnValue5Word-4      	253944045	         4.460 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnValue6Word-4      	276598297	         4.388 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnValue7Word-4      	201515925	         5.832 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnValue8Word-4      	197764827	         6.307 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnValue9Word-4      	144803336	         7.816 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnValue10Word-4     	97111467	        10.52 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnPointer1Word-4    	596945245	         2.178 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnPointer2Word-4    	579659180	         2.025 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnPointer3Word-4    	559075927	         2.413 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnPointer4Word-4    	463279936	         2.617 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnPointer5Word-4    	383080966	         3.085 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnPointer6Word-4    	385389708	         3.024 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnPointer7Word-4    	376306926	         3.187 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnPointer8Word-4    	349433838	         3.244 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnPointer9Word-4    	303458364	         3.935 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg0ReturnPointer10Word-4   	211677915	         5.074 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	32.906s
+
+go test -bench PointerReciverNoinlineGlobal2Arg0Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnValue1Word-4      	565848490	         2.025 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnValue2Word-4      	520425561	         2.463 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnValue3Word-4      	407727013	         2.886 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnValue4Word-4      	384129020	         3.072 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnValue5Word-4      	312817827	         4.311 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnValue6Word-4      	257042475	         4.842 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnValue7Word-4      	243995582	         4.880 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnValue8Word-4      	211454484	         5.697 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnValue9Word-4      	180148360	         6.369 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnValue10Word-4     	128791618	         8.625 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnPointer1Word-4    	541529067	         2.336 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnPointer2Word-4    	468229873	         2.282 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnPointer3Word-4    	484893621	         2.068 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnPointer4Word-4    	518200408	         2.145 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnPointer5Word-4    	581845176	         2.242 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnPointer6Word-4    	543724191	         2.379 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnPointer7Word-4    	522303644	         2.352 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnPointer8Word-4    	575828610	         2.338 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnPointer9Word-4    	606420730	         2.040 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg0ReturnPointer10Word-4   	546883521	         2.203 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	32.001s
+
+go test -bench FuncNoinlineGlobal3Arg0Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkFuncNoinlineGlobal3Arg0ReturnValue1Word-4      	603214232	         1.905 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnValue2Word-4      	505572801	         2.327 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnValue3Word-4      	385572510	         3.182 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnValue4Word-4      	355373521	         3.351 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnValue5Word-4      	242505211	         4.718 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnValue6Word-4      	259482081	         4.820 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnValue7Word-4      	196981712	         5.837 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnValue8Word-4      	187211882	         5.767 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnValue9Word-4      	168852620	         7.584 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnValue10Word-4     	119792005	        11.01 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnPointer1Word-4    	606245656	         2.186 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnPointer2Word-4    	503907396	         2.146 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnPointer3Word-4    	615633302	         2.031 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnPointer4Word-4    	577453545	         1.996 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnPointer5Word-4    	604857927	         2.257 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnPointer6Word-4    	588166824	         2.123 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnPointer7Word-4    	598212018	         1.941 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnPointer8Word-4    	613185906	         1.907 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnPointer9Word-4    	639883039	         1.986 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg0ReturnPointer10Word-4   	590525379	         1.861 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	31.869s
+
+go test -bench ValueReciverNoinlineGlobal3Arg0Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnValue1Word-4      	551303716	         1.954 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnValue2Word-4      	454339462	         2.813 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnValue3Word-4      	270752379	         4.271 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnValue4Word-4      	295614481	         4.334 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnValue5Word-4      	178904472	         6.151 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnValue6Word-4      	148956363	         8.166 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnValue7Word-4      	151666766	         8.108 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnValue8Word-4      	153085674	         7.217 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnValue9Word-4      	123727908	         9.142 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnValue10Word-4     	104659705	        12.70 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnPointer1Word-4    	552296115	         2.195 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnPointer2Word-4    	568674094	         2.437 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnPointer3Word-4    	424050918	         2.769 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnPointer4Word-4    	443925906	         2.738 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnPointer5Word-4    	422948304	         2.753 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnPointer6Word-4    	281436738	         3.965 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnPointer7Word-4    	383192848	         3.119 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnPointer8Word-4    	407775817	         3.100 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnPointer9Word-4    	313420384	         3.714 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg0ReturnPointer10Word-4   	255124392	         4.796 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	33.569s
+
+go test -bench PointerReciverNoinlineGlobal3Arg0Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnValue1Word-4      	486524656	         2.148 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnValue2Word-4      	413542732	         2.782 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnValue3Word-4      	355306124	         3.194 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnValue4Word-4      	293953303	         3.791 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnValue5Word-4      	265048338	         4.814 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnValue6Word-4      	214845278	         5.567 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnValue7Word-4      	172678671	         6.232 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnValue8Word-4      	179135233	         6.691 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnValue9Word-4      	156617642	         7.898 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnValue10Word-4     	100000000	        11.26 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnPointer1Word-4    	522161031	         2.058 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnPointer2Word-4    	535858461	         2.136 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnPointer3Word-4    	589767498	         2.230 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnPointer4Word-4    	570121735	         2.325 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnPointer5Word-4    	534353824	         2.119 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnPointer6Word-4    	556649998	         2.368 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnPointer7Word-4    	564351548	         2.286 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnPointer8Word-4    	514127534	         2.232 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnPointer9Word-4    	557538590	         2.346 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg0ReturnPointer10Word-4   	551197752	         2.315 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	30.703s
+
+go test -bench FuncNoinlineGlobal1Arg1Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkFuncNoinlineGlobal1Arg1ReturnValue1Word-4      	581466436	         2.113 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnValue2Word-4      	482579574	         2.393 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnValue3Word-4      	364564522	         3.294 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnValue4Word-4      	314719652	         3.348 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnValue5Word-4      	256634533	         4.717 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnValue6Word-4      	256552702	         4.460 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnValue7Word-4      	194801187	         6.374 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnValue8Word-4      	207536118	         5.488 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnValue9Word-4      	153791384	         6.835 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnValue10Word-4     	131324385	         9.873 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnPointer1Word-4    	687276138	         1.635 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnPointer2Word-4    	604273710	         2.104 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnPointer3Word-4    	689707514	         1.650 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnPointer4Word-4    	643517648	         2.139 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnPointer5Word-4    	716136949	         1.634 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnPointer6Word-4    	499333051	         2.151 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnPointer7Word-4    	700143298	         1.826 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnPointer8Word-4    	631372095	         1.993 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnPointer9Word-4    	649571893	         1.692 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg1ReturnPointer10Word-4   	473631044	         2.324 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	31.701s
+
+go test -bench ValueReciverNoinlineGlobal1Arg1Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnValue1Word-4      	595701775	         1.983 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnValue2Word-4      	431305111	         2.600 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnValue3Word-4      	304627665	         3.988 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnValue4Word-4      	305630902	         4.236 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnValue5Word-4      	206037481	         5.682 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnValue6Word-4      	209650602	         5.787 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnValue7Word-4      	156760011	         8.090 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnValue8Word-4      	155692785	         7.786 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnValue9Word-4      	126607635	         9.730 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnValue10Word-4     	89534604	        12.82 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnPointer1Word-4    	616405989	         2.061 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnPointer2Word-4    	493555160	         2.222 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnPointer3Word-4    	530066235	         2.308 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnPointer4Word-4    	518267192	         2.328 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnPointer5Word-4    	429627740	         3.170 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnPointer6Word-4    	439475740	         2.810 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnPointer7Word-4    	394767147	         2.979 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnPointer8Word-4    	348392086	         3.167 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnPointer9Word-4    	322196444	         3.574 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg1ReturnPointer10Word-4   	235987627	         4.865 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	34.178s
+
+go test -bench PointerReciverNoinlineGlobal1Arg1Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnValue1Word-4      	496373994	         2.279 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnValue2Word-4      	431828973	         2.691 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnValue3Word-4      	336855640	         3.741 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnValue4Word-4      	303645549	         4.290 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnValue5Word-4      	257279478	         4.810 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnValue6Word-4      	228031158	         5.131 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnValue7Word-4      	189904003	         6.208 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnValue8Word-4      	178050379	         6.654 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnValue9Word-4      	162658202	         8.041 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnValue10Word-4     	91403646	        12.61 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnPointer1Word-4    	472236642	         2.176 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnPointer2Word-4    	577468828	         2.085 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnPointer3Word-4    	535213404	         2.293 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnPointer4Word-4    	516686506	         2.253 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnPointer5Word-4    	625997085	         1.951 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnPointer6Word-4    	558746548	         1.993 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnPointer7Word-4    	531675907	         2.037 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnPointer8Word-4    	581495197	         2.065 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnPointer9Word-4    	613403030	         1.982 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg1ReturnPointer10Word-4   	497464947	         2.117 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	31.273s
+
+go test -bench FuncNoinlineGlobal2Arg1Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkFuncNoinlineGlobal2Arg1ReturnValue1Word-4      	538750626	         2.182 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnValue2Word-4      	422411671	         2.914 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnValue3Word-4      	283214904	         4.050 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnValue4Word-4      	283835988	         4.231 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnValue5Word-4      	193380626	         5.703 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnValue6Word-4      	195992180	         6.563 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnValue7Word-4      	154109923	         7.263 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnValue8Word-4      	176075556	         6.974 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnValue9Word-4      	99174003	        10.31 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnValue10Word-4     	75075699	        13.74 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnPointer1Word-4    	591319990	         1.978 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnPointer2Word-4    	568153022	         2.032 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnPointer3Word-4    	531826672	         2.548 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnPointer4Word-4    	502347955	         2.390 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnPointer5Word-4    	486646498	         2.265 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnPointer6Word-4    	564951892	         2.110 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnPointer7Word-4    	638104896	         2.112 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnPointer8Word-4    	583814958	         2.058 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnPointer9Word-4    	605750449	         2.185 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg1ReturnPointer10Word-4   	574687453	         2.080 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	32.055s
+
+go test -bench ValueReciverNoinlineGlobal2Arg1Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnValue1Word-4      	557231128	         2.058 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnValue2Word-4      	386628937	         3.235 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnValue3Word-4      	248329056	         4.567 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnValue4Word-4      	263508746	         4.641 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnValue5Word-4      	179312617	         7.020 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnValue6Word-4      	168813366	         6.989 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnValue7Word-4      	97242864	        10.32 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnValue8Word-4      	123823574	         9.779 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnValue9Word-4      	100000000	        12.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnValue10Word-4     	72755348	        16.53 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnPointer1Word-4    	449872868	         2.396 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnPointer2Word-4    	543789194	         2.092 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnPointer3Word-4    	556655646	         2.129 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnPointer4Word-4    	543718129	         2.212 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnPointer5Word-4    	411684222	         2.533 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnPointer6Word-4    	454061559	         2.821 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnPointer7Word-4    	416521297	         3.000 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnPointer8Word-4    	338312862	         3.026 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnPointer9Word-4    	328893757	         3.627 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg1ReturnPointer10Word-4   	251006452	         5.114 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	33.311s
+
+go test -bench PointerReciverNoinlineGlobal2Arg1Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnValue1Word-4      	522196612	         2.158 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnValue2Word-4      	435718611	         2.748 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnValue3Word-4      	273410101	         4.333 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnValue4Word-4      	246074900	         4.772 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnValue5Word-4      	193544972	         6.270 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnValue6Word-4      	177510492	         6.448 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnValue7Word-4      	144147458	         9.947 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnValue8Word-4      	101021623	        10.52 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnValue9Word-4      	100000000	        11.22 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnValue10Word-4     	76809326	        16.13 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnPointer1Word-4    	523267003	         2.536 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnPointer2Word-4    	435175578	         2.358 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnPointer3Word-4    	575079661	         2.245 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnPointer4Word-4    	475874451	         2.418 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnPointer5Word-4    	503976910	         2.263 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnPointer6Word-4    	514131910	         2.401 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnPointer7Word-4    	476366487	         2.222 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnPointer8Word-4    	570495489	         2.146 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnPointer9Word-4    	582446319	         2.167 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg1ReturnPointer10Word-4   	576857494	         2.250 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	32.825s
+
+go test -bench FuncNoinlineGlobal3Arg1Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkFuncNoinlineGlobal3Arg1ReturnValue1Word-4      	552395881	         2.222 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnValue2Word-4      	302721792	         3.723 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnValue3Word-4      	206661754	         5.327 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnValue4Word-4      	237740082	         4.999 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnValue5Word-4      	158631676	         7.789 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnValue6Word-4      	128600502	         9.434 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnValue7Word-4      	123357854	        10.54 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnValue8Word-4      	146265804	         8.567 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnValue9Word-4      	90450676	        11.86 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnValue10Word-4     	67321813	        16.94 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnPointer1Word-4    	456506384	         2.348 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnPointer2Word-4    	509921766	         2.350 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnPointer3Word-4    	508459987	         2.257 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnPointer4Word-4    	533394860	         2.567 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnPointer5Word-4    	433782904	         2.377 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnPointer6Word-4    	512585373	         2.210 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnPointer7Word-4    	517659252	         2.104 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnPointer8Word-4    	550866614	         2.252 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnPointer9Word-4    	567519574	         2.146 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg1ReturnPointer10Word-4   	530577686	         2.287 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	32.104s
+
+go test -bench ValueReciverNoinlineGlobal3Arg1Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnValue1Word-4      	533267520	         2.135 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnValue2Word-4      	361307029	         3.511 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnValue3Word-4      	194912377	         5.802 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnValue4Word-4      	209183586	         6.135 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnValue5Word-4      	100000000	        11.79 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnValue6Word-4      	126416204	         8.349 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnValue7Word-4      	91885562	        10.93 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnValue8Word-4      	100000000	        10.04 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnValue9Word-4      	93298585	        13.43 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnValue10Word-4     	53556919	        18.94 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnPointer1Word-4    	567557200	         2.435 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnPointer2Word-4    	525494751	         2.265 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnPointer3Word-4    	390961104	         2.740 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnPointer4Word-4    	433213399	         2.606 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnPointer5Word-4    	437926622	         2.817 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnPointer6Word-4    	382529178	         3.216 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnPointer7Word-4    	351074180	         3.285 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnPointer8Word-4    	361306933	         3.361 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnPointer9Word-4    	277874026	         4.017 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg1ReturnPointer10Word-4   	243328688	         4.920 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	30.250s
+
+go test -bench PointerReciverNoinlineGlobal3Arg1Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnValue1Word-4      	503062520	         2.331 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnValue2Word-4      	365444734	         3.659 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnValue3Word-4      	216021668	         4.964 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnValue4Word-4      	201223624	         6.001 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnValue5Word-4      	158159604	         7.411 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnValue6Word-4      	128268045	         8.565 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnValue7Word-4      	121135106	        10.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnValue8Word-4      	100000000	        12.64 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnValue9Word-4      	90779997	        12.96 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnValue10Word-4     	65875873	        18.18 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnPointer1Word-4    	544084074	         2.686 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnPointer2Word-4    	506423052	         2.432 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnPointer3Word-4    	545023981	         2.210 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnPointer4Word-4    	530126821	         2.495 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnPointer5Word-4    	518217211	         2.453 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnPointer6Word-4    	518350444	         2.244 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnPointer7Word-4    	529357233	         2.196 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnPointer8Word-4    	540689941	         2.671 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnPointer9Word-4    	495177334	         2.715 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg1ReturnPointer10Word-4   	465722421	         2.446 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	31.584s
+
+go test -bench FuncNoinlineGlobal1Arg2Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkFuncNoinlineGlobal1Arg2ReturnValue1Word-4      	615579610	         1.741 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnValue2Word-4      	380895732	         3.566 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnValue3Word-4      	186566720	         5.654 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnValue4Word-4      	210588625	         5.752 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnValue5Word-4      	140181651	         8.998 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnValue6Word-4      	149301501	         7.836 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnValue7Word-4      	100000000	        10.08 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnValue8Word-4      	124575662	         9.855 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnValue9Word-4      	98087802	        13.46 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnValue10Word-4     	70072959	        17.50 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnPointer1Word-4    	523254954	         2.177 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnPointer2Word-4    	516872022	         2.161 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnPointer3Word-4    	579876378	         2.205 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnPointer4Word-4    	537210112	         2.151 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnPointer5Word-4    	554237416	         2.224 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnPointer6Word-4    	571962337	         2.202 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnPointer7Word-4    	560312674	         2.352 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnPointer8Word-4    	416489059	         2.487 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnPointer9Word-4    	548325975	         2.365 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal1Arg2ReturnPointer10Word-4   	544539513	         2.246 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	31.756s
+
+go test -bench ValueReciverNoinlineGlobal1Arg2Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnValue1Word-4      	374081560	         2.706 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnValue2Word-4      	297484704	         4.010 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnValue3Word-4      	215376744	         6.108 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnValue4Word-4      	199183852	         6.292 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnValue5Word-4      	121313464	        10.22 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnValue6Word-4      	142727931	         7.714 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnValue7Word-4      	109775626	        10.49 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnValue8Word-4      	100000000	        10.46 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnValue9Word-4      	88286720	        14.44 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnValue10Word-4     	59303641	        20.50 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnPointer1Word-4    	513838158	         2.178 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnPointer2Word-4    	569541920	         2.122 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnPointer3Word-4    	486230179	         2.686 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnPointer4Word-4    	446406868	         2.663 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnPointer5Word-4    	446151847	         2.775 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnPointer6Word-4    	425623047	         2.824 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnPointer7Word-4    	367883158	         3.261 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnPointer8Word-4    	364552567	         3.378 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnPointer9Word-4    	307324024	         3.947 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal1Arg2ReturnPointer10Word-4   	252729315	         5.167 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	33.991s
+
+go test -bench PointerReciverNoinlineGlobal1Arg2Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnValue1Word-4      	617562542	         2.188 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnValue2Word-4      	323466416	         3.764 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnValue3Word-4      	204442314	         6.048 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnValue4Word-4      	178711374	         6.218 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnValue5Word-4      	154292449	         7.713 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnValue6Word-4      	141493306	         8.985 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnValue7Word-4      	100000000	        10.45 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnValue8Word-4      	97189183	        10.92 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnValue9Word-4      	90976933	        13.69 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnValue10Word-4     	49803834	        20.63 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnPointer1Word-4    	512311986	         2.561 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnPointer2Word-4    	604498825	         2.207 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnPointer3Word-4    	462966992	         2.225 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnPointer4Word-4    	505311505	         2.311 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnPointer5Word-4    	522920949	         2.471 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnPointer6Word-4    	482771515	         2.151 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnPointer7Word-4    	557355022	         2.583 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnPointer8Word-4    	559045687	         2.698 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnPointer9Word-4    	544855310	         2.179 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal1Arg2ReturnPointer10Word-4   	581595632	         2.158 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	32.218s
+
+go test -bench FuncNoinlineGlobal2Arg2Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkFuncNoinlineGlobal2Arg2ReturnValue1Word-4      	541056436	         2.072 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnValue2Word-4      	312450792	         3.585 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnValue3Word-4      	188163871	         6.676 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnValue4Word-4      	206569074	         5.933 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnValue5Word-4      	130554577	         8.719 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnValue6Word-4      	150341083	         7.885 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnValue7Word-4      	100000000	        11.55 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnValue8Word-4      	114979821	        10.95 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnValue9Word-4      	76542619	        15.12 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnValue10Word-4     	54036243	        20.50 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnPointer1Word-4    	608626588	         2.315 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnPointer2Word-4    	447228164	         2.249 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnPointer3Word-4    	536500533	         2.275 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnPointer4Word-4    	592285209	         2.075 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnPointer5Word-4    	477427273	         2.365 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnPointer6Word-4    	529574294	         2.260 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnPointer7Word-4    	562639612	         2.174 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnPointer8Word-4    	567070552	         2.130 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnPointer9Word-4    	550412382	         2.211 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal2Arg2ReturnPointer10Word-4   	550686570	         2.093 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	32.644s
+
+go test -bench ValueReciverNoinlineGlobal2Arg2Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnValue1Word-4      	597603201	         2.103 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnValue2Word-4      	328875290	         3.804 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnValue3Word-4      	179437182	         6.206 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnValue4Word-4      	192026202	         6.894 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnValue5Word-4      	107399659	        11.48 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnValue6Word-4      	114473470	         9.921 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnValue7Word-4      	82894005	        12.54 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnValue8Word-4      	77507457	        13.02 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnValue9Word-4      	66675001	        16.67 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnValue10Word-4     	52515778	        23.16 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnPointer1Word-4    	535971134	         2.222 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnPointer2Word-4    	603297663	         2.149 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnPointer3Word-4    	492186499	         2.281 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnPointer4Word-4    	500539260	         2.293 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnPointer5Word-4    	439283965	         2.793 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnPointer6Word-4    	418536733	         2.582 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnPointer7Word-4    	440821856	         2.801 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnPointer8Word-4    	399250546	         2.894 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnPointer9Word-4    	361751548	         3.327 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal2Arg2ReturnPointer10Word-4   	285560685	         5.016 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	31.250s
+
+go test -bench PointerReciverNoinlineGlobal2Arg2Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnValue1Word-4      	502354984	         2.114 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnValue2Word-4      	294312866	         4.074 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnValue3Word-4      	164299317	         6.448 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnValue4Word-4      	186304936	         7.395 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnValue5Word-4      	143694313	         8.491 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnValue6Word-4      	131063234	         8.922 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnValue7Word-4      	105994490	        11.59 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnValue8Word-4      	87700608	        12.12 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnValue9Word-4      	78295777	        13.40 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnValue10Word-4     	61891522	        21.04 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnPointer1Word-4    	533874225	         2.388 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnPointer2Word-4    	459563793	         2.341 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnPointer3Word-4    	501484438	         2.328 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnPointer4Word-4    	522351007	         2.248 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnPointer5Word-4    	509881561	         2.337 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnPointer6Word-4    	542032648	         2.673 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnPointer7Word-4    	471284107	         2.475 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnPointer8Word-4    	520108580	         2.403 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnPointer9Word-4    	526620369	         2.226 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal2Arg2ReturnPointer10Word-4   	605385301	         2.048 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	33.887s
+
+go test -bench FuncNoinlineGlobal3Arg2Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkFuncNoinlineGlobal3Arg2ReturnValue1Word-4      	576424521	         2.079 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnValue2Word-4      	319705809	         4.062 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnValue3Word-4      	173820321	         6.721 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnValue4Word-4      	181442197	         6.914 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnValue5Word-4      	117017800	         9.754 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnValue6Word-4      	120628214	         8.759 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnValue7Word-4      	78394905	        13.89 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnValue8Word-4      	91587162	        12.03 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnValue9Word-4      	73011403	        16.39 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnValue10Word-4     	52995260	        23.12 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnPointer1Word-4    	531089719	         2.469 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnPointer2Word-4    	558809766	         2.047 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnPointer3Word-4    	583821213	         1.978 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnPointer4Word-4    	590748970	         2.109 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnPointer5Word-4    	533201899	         2.317 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnPointer6Word-4    	541119579	         2.679 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnPointer7Word-4    	550264095	         2.249 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnPointer8Word-4    	554954295	         2.097 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnPointer9Word-4    	572047938	         2.173 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFuncNoinlineGlobal3Arg2ReturnPointer10Word-4   	498227058	         2.259 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	33.042s
+
+go test -bench ValueReciverNoinlineGlobal3Arg2Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnValue1Word-4      	604388305	         2.207 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnValue2Word-4      	272214753	         3.813 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnValue3Word-4      	163488426	         7.720 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnValue4Word-4      	169861843	         6.760 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnValue5Word-4      	112894674	        11.38 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnValue6Word-4      	100000000	        10.46 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnValue7Word-4      	82172446	        14.65 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnValue8Word-4      	86514906	        14.11 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnValue9Word-4      	54004935	        21.37 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnValue10Word-4     	44157307	        26.23 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnPointer1Word-4    	514217919	         2.210 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnPointer2Word-4    	518483024	         2.146 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnPointer3Word-4    	487535827	         2.317 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnPointer4Word-4    	479261748	         2.495 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnPointer5Word-4    	434073069	         2.803 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnPointer6Word-4    	407100654	         2.911 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnPointer7Word-4    	363591609	         3.209 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnPointer8Word-4    	348366036	         3.396 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnPointer9Word-4    	334972768	         3.597 ns/op	       0 B/op	       0 allocs/op
+BenchmarkValueReciverNoinlineGlobal3Arg2ReturnPointer10Word-4   	262014067	         4.783 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	29.851s
+
+go test -bench PointerReciverNoinlineGlobal3Arg2Return
+goos: linux
+goarch: amd64
+pkg: github.com/shunsukuda/go-val_vs_ptr
+cpu: Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnValue1Word-4      	516204333	         2.159 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnValue2Word-4      	309835051	         3.843 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnValue3Word-4      	176505049	         7.065 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnValue4Word-4      	156335432	         7.356 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnValue5Word-4      	100000000	        10.11 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnValue6Word-4      	100000000	        11.38 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnValue7Word-4      	86781783	        15.16 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnValue8Word-4      	73953064	        15.72 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnValue9Word-4      	58890768	        18.92 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnValue10Word-4     	43615552	        25.72 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnPointer1Word-4    	536377378	         2.116 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnPointer2Word-4    	617721553	         2.404 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnPointer3Word-4    	571640833	         2.065 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnPointer4Word-4    	552898671	         2.102 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnPointer5Word-4    	512380480	         2.426 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnPointer6Word-4    	521732209	         2.419 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnPointer7Word-4    	544574415	         2.076 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnPointer8Word-4    	610868809	         2.202 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnPointer9Word-4    	529860829	         2.295 ns/op	       0 B/op	       0 allocs/op
+BenchmarkPointerReciverNoinlineGlobal3Arg2ReturnPointer10Word-4   	573601575	         2.047 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/shunsukuda/go-val_vs_ptr	31.098s
+
